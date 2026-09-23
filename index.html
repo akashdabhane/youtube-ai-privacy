@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Privacy Policy – AI Assistant for YouTube</title>
+    <meta name="description" content="Privacy policy for the AI Assistant for YouTube Chrome extension.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --paper: #f7f8fa;
+            --ink: #1b2330;
+            --muted: #5a6475;
+            --rule: #d9dee6;
+            --accent: #c4122f;
+            --panel: #ffffff;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --paper: #12161d;
+                --ink: #e4e8ee;
+                --muted: #9aa4b4;
+                --rule: #2a313d;
+                --accent: #ff5a6e;
+                --panel: #181d26;
+            }
+        }
+
+        :root[data-theme="dark"] {
+            --paper: #12161d;
+            --ink: #e4e8ee;
+            --muted: #9aa4b4;
+            --rule: #2a313d;
+            --accent: #ff5a6e;
+            --panel: #181d26;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        html {
+            scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 24px);
+            scroll-behavior: smooth;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrap {
+            max-width: 68rem;
+            margin: 0 auto;
+            padding: 3.5rem 1.5rem 5rem;
+            display: grid;
+            grid-template-columns: 14rem minmax(0, 40rem);
+            gap: 4rem;
+        }
+
+        header.masthead {
+            grid-column: 1 / -1;
+            border-left: 4px solid var(--accent);
+            padding-left: 1.25rem;
+        }
+
+        h1,
+        h2,
+        nav,
+        .meta,
+        .summary h2 {
+            font-family: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            line-height: 1.1;
+            margin: 0 0 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        nav {
+            position: sticky;
+            top: calc(env(safe-area-inset-top, 0px) + 1.5rem);
+            align-self: start;
+            font-size: 0.9rem;
+        }
+
+        nav p {
+            font-weight: 600;
+            margin: 0 0 0.5rem;
+        }
+
+        nav ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border-left: 1px solid var(--rule);
+        }
+
+        nav a {
+            display: block;
+            padding: 0.3rem 0 0.3rem 0.9rem;
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: -1px;
+            border-left: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--ink);
+            border-left-color: var(--accent);
+        }
+
+        main {
+            min-width: 0;
+        }
+
+        .summary {
+            background: var(--panel);
+            border: 1px solid var(--rule);
+            border-radius: 6px;
+            padding: 1.5rem 1.75rem;
+            margin-bottom: 3rem;
+        }
+
+        .summary h2 {
+            margin-top: 0;
+            font-size: 1.15rem;
+        }
+
+        .summary ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        section {
+            margin-bottom: 2.75rem;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin: 0 0 0.75rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            margin: 1.5rem 0 0.4rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0 0 1rem;
+        }
+
+        ul {
+            padding-left: 1.3rem;
+            margin: 0 0 1rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-underline-offset: 2px;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 0 0 1rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.97rem;
+        }
+
+        th,
+        td {
+            text-align: left;
+            vertical-align: top;
+            padding: 0.6rem 0.75rem;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        th {
+            font-family: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            grid-column: 1 / -1;
+            border-top: 1px solid var(--rule);
+            padding-top: 1.5rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 52rem) {
+            .wrap {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 2rem;
+                padding-top: 2.5rem;
+            }
+
+            nav {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="masthead">
+            <h1>Privacy Policy</h1>
+            <p class="meta">AI Assistant for YouTube (Chrome extension). Effective September 22, 2026.</p>
+        </header>
+
+        <nav aria-label="Contents">
+            <p>Contents</p>
+            <ol>
+                <li><a href="#collect">What we collect</a></li>
+                <li><a href="#not-collect">What we don't collect</a></li>
+                <li><a href="#use">How we use it</a></li>
+                <li><a href="#third-parties">Third-party services</a></li>
+                <li><a href="#retention">Storage and retention</a></li>
+                <li><a href="#sharing">Sharing and selling</a></li>
+                <li><a href="#limited-use">Chrome Web Store disclosure</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#choices">Your choices</a></li>
+                <li><a href="#children">Children</a></li>
+                <li><a href="#changes">Changes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+
+        <main>
+            <div class="summary">
+                <h2>The short version</h2>
+                <ul>
+                    <li>To use the assistant you create an account with your email address and a password.</li>
+                    <li>When you send a message, your question and the URL of the YouTube page you're on go to our
+                        server so the AI can answer.</li>
+                    <li>We don't read other tabs, track your browsing, or show ads, and we never sell your data.</li>
+                    <li>Conversation history lives only in server memory and is erased whenever the server restarts.
+                    </li>
+                </ul>
+            </div>
+
+            <section id="collect">
+                <h2>What we collect</h2>
+                <p>AI Assistant for YouTube ("the extension", "we", "us") is built and maintained by Akash Dabhane. It
+                    collects only what it needs to answer your questions.</p>
+
+                <h3>Account information</h3>
+                <p>When you register or sign in, you enter an email address and a password. They are sent directly from
+                    the extension to our authentication provider, Supabase. Our own server never receives or stores your
+                    password.</p>
+
+                <h3>Session tokens</h3>
+                <p>After you sign in, Supabase returns an access token, a refresh token, and basic account details (such
+                    as your email address and user ID). The extension stores these in your browser's local extension
+                    storage so you stay signed in. Each request to our server includes the access token so we can
+                    confirm it's you.</p>
+
+                <h3>Your questions and the current page URL</h3>
+                <p>When you send a message, the extension sends the following to our server:</p>
+                <ul>
+                    <li>the text of your question</li>
+                    <li>the URL of the YouTube tab you're viewing, which tells the assistant which video, channel, or
+                        playlist you mean</li>
+                    <li>your user ID, which keeps your conversation separate from other users' conversations</li>
+                </ul>
+                <p>The URL is read only when you send a message, and only from the active tab.</p>
+            </section>
+
+            <section id="not-collect">
+                <h2>What we don't collect</h2>
+                <ul>
+                    <li>Your browsing history, or any page other than the one you're on when you send a message</li>
+                    <li>The content of YouTube pages, your YouTube account, or your watch history</li>
+                    <li>Keystrokes, clicks, mouse movement, or other activity tracking</li>
+                    <li>Your location, contacts, or payment information</li>
+                    <li>Analytics, advertising identifiers, or tracking cookies</li>
+                </ul>
+            </section>
+
+            <section id="use">
+                <h2>How we use it</h2>
+                <ul>
+                    <li>We use your email and session tokens to create your account, sign you in, and verify each
+                        request.</li>
+                    <li>We use your question and the page URL to fetch the relevant public YouTube data and generate an
+                        answer.</li>
+                    <li>We keep your recent messages in server memory so the assistant can follow up on earlier
+                        questions in the same conversation.</li>
+                </ul>
+                <p>We use this data only to provide the extension's features. We don't use it for advertising,
+                    profiling, or any unrelated purpose.</p>
+            </section>
+
+            <section id="third-parties">
+                <h2>Third-party services</h2>
+                <p>Answering your questions requires the services below. Each one receives only what it needs.</p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Service</th>
+                                <th scope="col">What it does</th>
+                                <th scope="col">Data it receives</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://supabase.com/privacy" rel="noopener">Supabase</a></td>
+                                <td>Account sign-up, sign-in, and token verification</td>
+                                <td>Email, password, session tokens</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://render.com/privacy" rel="noopener">Render</a></td>
+                                <td>Hosts our backend server</td>
+                                <td>Everything sent to our server, as described above</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://policies.google.com/privacy" rel="noopener">Google Gemini API</a>
+                                </td>
+                                <td>The AI model that writes the answers</td>
+                                <td>Your question, the page URL, conversation context, and YouTube data fetched for the
+                                    answer</td>
+                            </tr>
+                            <tr>
+                                <td>YouTube API Services</td>
+                                <td>Provides public video, channel, playlist, comment, and transcript data</td>
+                                <td>Video, channel, and playlist IDs and search terms, never your account details</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>We may switch AI model providers in the future (for example, to Groq). If we do, we will update this
+                    policy.</p>
+                <p>The extension uses YouTube API Services. By using the extension you agree to be bound by the <a
+                        href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>. For how
+                    Google handles data, see the <a href="https://policies.google.com/privacy" rel="noopener">Google
+                        Privacy Policy</a>.</p>
+            </section>
+
+            <section id="retention">
+                <h2>Storage and retention</h2>
+                <ul>
+                    <li><strong>In your browser:</strong> Session tokens and account details stay in local extension
+                        storage until you log out or uninstall the extension.</li>
+                    <li><strong>Conversation history:</strong> This is held in our server's memory only and is never
+                        written to a database. It is erased whenever the server restarts or redeploys, which happens
+                        regularly.</li>
+                    <li><strong>Your account:</strong> Your email and account record stay in Supabase until you ask us
+                        to delete them.</li>
+                    <li><strong>Server logs:</strong> Our hosting provider may keep standard technical logs, such as
+                        request times and error messages, for a limited period to help with reliability.</li>
+                </ul>
+            </section>
+
+            <section id="sharing">
+                <h2>Sharing and selling</h2>
+                <p>We do not sell, rent, or trade your data. We do not share it with advertisers or data brokers. We
+                    share data only with the services listed above, only to operate the extension, or when the law
+                    requires it.</p>
+            </section>
+
+            <section id="limited-use">
+                <h2>Chrome Web Store disclosure</h2>
+                <p>The use of information received from the extension complies with the <a
+                        href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq"
+                        rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. We
+                    don't transfer user data to third parties except as needed to provide the extension's single
+                    purpose. We don't use it for creditworthiness or lending, and we don't let people read it except
+                    where necessary for security, legal compliance, or with your consent.</p>
+            </section>
+
+            <section id="security">
+                <h2>Security</h2>
+                <p>All communication between the extension, our server, and Supabase uses HTTPS. Our server checks your
+                    access token with Supabase before handling any request. No method of storage or transmission is
+                    completely secure, but we take reasonable steps to protect your data.</p>
+            </section>
+
+            <section id="choices">
+                <h2>Your choices</h2>
+                <ul>
+                    <li><strong>Log out:</strong> Use the logout button in the sidebar. This removes your tokens from
+                        your browser.</li>
+                    <li><strong>Uninstall:</strong> Removing the extension deletes everything it stored in your browser.
+                    </li>
+                    <li><strong>Delete your account:</strong> Email us from the address you registered with, and we will
+                        delete your account within 30 days.</li>
+                    <li><strong>Access your data:</strong> Email us to ask what account data we hold about you.</li>
+                </ul>
+            </section>
+
+            <section id="children">
+                <h2>Children</h2>
+                <p>The extension is not directed at children under 13, and we don't knowingly collect data from them. If
+                    you believe a child has created an account, contact us and we will delete it.</p>
+            </section>
+
+            <section id="changes">
+                <h2>Changes to this policy</h2>
+                <p>If we change what we collect or how we use it, we will update this page and its effective date. For
+                    significant changes, we will also note them in the extension's Chrome Web Store listing.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>For questions or deletion requests, email Akash Dabhane at <a
+                        href="mailto:akashdabhane10@gmail.com">akashdabhane10@gmail.com</a>.</p>
+            </section>
+        </main>
+
+        <footer>
+            AI Assistant for YouTube is an independent project and is not affiliated with, endorsed by, or sponsored by
+            YouTube or Google LLC.
+        </footer>
+    </div>
+</body>
+
+</html>
+
